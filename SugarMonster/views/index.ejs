@@ -5,6 +5,48 @@
 <h1>Hello world</h1>
 
 <p>My first paragraph.</p>
+<form action="/register" method="POST" id="accountButton">  
 
+    <fieldset style="margin-left: 30px; margin-top: 30px;">
+        <legend>Register</legend>
+
+        <label style="width: 150px;" for="childname">Childname: </label>
+        <input placeholder="childname" type='text' name='childname' id='childname'  maxlength="50" />
+        <p></p>
+        <label style="width: 150px;" for="email">Email: </label>
+        <input placeholder="email" type='email' name='email' id='email'  maxlength="50" />
+        <p></p>
+        <label style="width: 150px;" for="password">Password: </label><input placeholder="password" type='password' name='password' id='password' maxlength="50" />
+        <p></p>
+        <button float="left" style="margin-left:5px" id="button" type="button" onclick = "testLogin()"> Create </button>
+    </fieldset>
+    </form>
+
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script>
+    
+
+    function testLogin(){
+        console.log("Testlogin called.")
+        /** Get the arguments */
+        var childname = document.getElementById('childname').value;
+        var email = document.getElementById('email').value;
+        var password = document.getElementById('password').value;
+   
+        $.ajax({
+            url: "/register",
+            type: "POST",
+            dataType: 'json', 
+            data: {
+                childname: childname,
+                email: email,
+                password: password,
+             }
+    })
+
+    }
+
+
+</script>    
 </body>
 </html>
