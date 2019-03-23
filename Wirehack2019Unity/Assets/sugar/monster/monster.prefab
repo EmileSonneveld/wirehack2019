@@ -169,7 +169,7 @@ GameObject:
   - component: {fileID: 3317826808095441913}
   - component: {fileID: 8529458509611259920}
   m_Layer: 0
-  m_Name: arm (1)
+  m_Name: armleft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -305,7 +305,7 @@ GameObject:
   - component: {fileID: 9208722764802246318}
   - component: {fileID: 7194707661010381995}
   m_Layer: 0
-  m_Name: arm
+  m_Name: armright
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -319,7 +319,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5522557716222585947}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.124688, y: -0.15313785, z: 0}
+  m_LocalPosition: {x: 2.124688, y: -0.1531378, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2495782753949902158}
@@ -383,6 +383,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3022265476474953545}
   - component: {fileID: 8398452596952672633}
+  - component: {fileID: 6233937656552448014}
   m_Layer: 0
   m_Name: ogen
   m_TagString: Untagged
@@ -452,6 +453,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &6233937656552448014
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8022783244131995715}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b81318878274545dd893fb92b3f5c19b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &8714622225332395005
 GameObject:
   m_ObjectHideFlags: 0
@@ -541,7 +561,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3690629652075107232}
   - component: {fileID: 2816372158294177186}
-  - component: {fileID: 9187600674344239074}
   m_Layer: 0
   m_Name: body
   m_TagString: Untagged
@@ -611,22 +630,3 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &9187600674344239074
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8752721935769030272}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 55555fc50a980442aa2cabf98f74ed88, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0

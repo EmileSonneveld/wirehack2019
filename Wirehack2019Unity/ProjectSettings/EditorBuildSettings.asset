@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Login.unity
     guid: 6a9dba4feccf5489a97ac68011024f19
   - enabled: 1
-    path: Assets/Register.unity
+    path: Assets/register.unity
     guid: 3b13caad103e8b5418b56eabc67f0b57
   - enabled: 1
     path: Assets/ChildHome.unity
