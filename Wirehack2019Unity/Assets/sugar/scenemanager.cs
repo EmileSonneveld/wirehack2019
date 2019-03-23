@@ -17,7 +17,12 @@ public class scenemanager : MonoBehaviour
         
     }
 
-    public void RegisterClicked(){
+	public void LoadScene(string sceneName)
+	{
+		SceneManager.LoadScene(sceneName, LoadSceneMode.Single);
+	}
+
+	public void RegisterClicked(){
         SceneManager.LoadScene("Register", LoadSceneMode.Single);
     }
 
