@@ -27,7 +27,10 @@ public class scenemanager : MonoBehaviour
 
     public void BackClicked(){
         SceneManager.LoadScene("Start", LoadSceneMode.Single);
-        Debug.Log("test");
+    }
+
+    public void ShopClicked(){
+        SceneManager.LoadScene("ChildShop", LoadSceneMode.Single);
     }
 
 }
